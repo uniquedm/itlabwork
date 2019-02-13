@@ -4,14 +4,16 @@
 			a.one:visited{
 				color:red;
 			}
-			a.one:link{
-				color:orange;		
-			}
 			a.one:visited{
 				color:black;
 			}
-			a.one:hover{
+			a.one:hover,a.one:link{
 				color:yellow;
+				background-color:orange;
+				text-decoration:underline;
+				display:inline-block;
+				padding:14px 25px;
+				text-align:center;
 			}
 			a:active{
 				color:white;
@@ -24,6 +26,7 @@
 			}
 			a:hover{
 				color:#ff5000;
+				text-decoration:line-through;
 			}
 			a:active{
 				color:white;
