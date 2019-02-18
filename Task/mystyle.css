@@ -1,0 +1,116 @@
+#para1{
+	color:blue;
+}
+.colortext{
+	color:green;
+}
+p,h1{
+	color:red;
+}
+p.task8{
+	border:4px dotted;
+}
+body{
+	background-color:linen;
+}
+h1{
+	background-color:lightblue;
+}
+body.task6{
+	background-image:url('sample.png');
+	background-repeat:repeat-y;
+}
+body.task7{
+	background-image:url('sample.png');
+	background-repeat:no-repeat;
+}
+p.task10{
+	border:10px solid green;
+}
+h1.task11{
+	margin-left:20px;
+}
+h1.task12{
+	margin:50px 25px;
+}
+p.task13{
+	padding:50px;
+}
+h1.task14{
+	width:50%;
+}
+div.task15{
+	width:200px;
+}
+div.task16{
+	border:25px solid navy;
+}
+:link{
+	text-decoration:none;
+}
+h1.task18{
+	text-transform:uppercase;
+}
+p.task18{
+	text-transform:capitalize;
+}
+p.task19{
+	text-decoration:italic;
+}
+body.task20{
+	font-size:20px;
+}
+h1.task20{
+	font-size:3em;
+}
+.task21:link{
+	color:red;
+}
+.task21:visited{
+	color:blue;
+}
+.task22:visited,link{
+	color:lightblue;
+}
+.task22:hover,active{
+	background-color:yellow;
+}
+ul{
+	list-style:square;
+}
+ol{
+	list-style:upper-roman;
+}
+table{
+	border: 2px solid green;
+}
+table.task25{
+	border-collapse:collapse;
+}
+div p{
+	color:red;
+}
+div > p{
+	color:red;
+}
+p.highlight:hover{
+	background-color:lightblue;
+}
+p.task29{
+	color:red;
+}
+p.task29::firt-letter{
+	font-size:xx-large;
+}
+img:hover{
+	opacity:0;
+}
+div.task31{
+	border-radius: 25px;
+}
+h1.task32{
+	text-shadow:2px 2px;
+}
+div.task33{
+	box-shadow: 10px 10px;
+}
