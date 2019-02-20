@@ -17,18 +17,23 @@ h1{
 	background-color:lightblue;
 }
 body.task6{
-	background-image:url('sample.png');
+	background-image:url('bg.jpg');
 	background-repeat:repeat-y;
 }
 body.task7{
-	background-image:url('sample.png');
+	background-image:url('bg.jpg');
 	background-repeat:no-repeat;
+	background-position:right;
+}
+p.task9{
+	border:10px solid red;
 }
 p.task10{
 	border:10px solid green;
 }
 h1.task11{
 	margin-left:20px;
+	padding-left:20px;
 }
 h1.task12{
 	margin:50px 25px;
@@ -55,7 +60,7 @@ p.task18{
 	text-transform:capitalize;
 }
 p.task19{
-	text-decoration:italic;
+	font-style:italic;
 }
 body.task20{
 	font-size:20px;
@@ -81,7 +86,7 @@ ul{
 ol{
 	list-style:upper-roman;
 }
-table{
+table.task24{
 	border: 2px solid green;
 }
 table.task25{
@@ -106,11 +111,13 @@ img:hover{
 	opacity:0;
 }
 div.task31{
+	border: 10px solid;
 	border-radius: 25px;
 }
 h1.task32{
-	text-shadow:2px 2px;
+	text-shadow:2px 2px yellow;
 }
 div.task33{
-	box-shadow: 10px 10px;
+	border: 10px solid red;
+	box-shadow: 10px 10px orange;
 }
