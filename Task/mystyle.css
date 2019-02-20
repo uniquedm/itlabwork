@@ -102,9 +102,10 @@ p.highlight:hover{
 	background-color:lightblue;
 }
 p.task29{
-	color:red;
+	color:black;
 }
-p.task29::firt-letter{
+p.task29::first-letter{
+	color:red;
 	font-size:xx-large;
 }
 img:hover{
