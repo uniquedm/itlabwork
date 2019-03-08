@@ -1,0 +1,41 @@
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+
+div {
+  display: block;
+}
+
+left
+right
+center
+justify
+
+<style type="text/css">
+.bgimg {
+    background-image: url('../images/divbg.png');
+}
+</style>
+
+...
+
+<div class="bgimg">
+    div with background
+</div>
+
+CSS background properties:
+
+    background-color
+    background-image
+	background-image: url("bgdesert.jpg");
+    background-repeat
+    background-attachment
+    background-position
+
+
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+
