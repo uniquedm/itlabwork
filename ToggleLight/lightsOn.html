@@ -1,0 +1,27 @@
+<HTML>
+	<HEAD>
+		<SCRIPT TYPE="text/javascript">
+			var x=0;
+			function lights()
+			{
+				if(x%2==0)
+				{
+					document.getElementById("switch").src = "switchoff.png";
+					document.body.style.background = "black";
+					x++;
+				}
+				else{
+					document.getElementById("switch").src = "switch.png";
+					document.body.style.background = "white";
+					x++;
+				}
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<center>
+			<image id="switch" src="switch.png" type="button" onclick="lights()" value="Toggle Light!">
+		</center>
+	</BODY>
+</HTML>
+
