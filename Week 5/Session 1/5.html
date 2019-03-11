@@ -1,0 +1,22 @@
+<!--Confirmations in JavaScript-->
+<HTML>
+	<HEAD>
+		<SCRIPT TYPE="text/javascript">
+			function getConfirmation()
+			{
+				var retVal = confirm("Do you want to continue?");
+				if(retVal==true)
+				{
+					document.write("User wants to continue!");
+					return true;
+				}else{
+					document.write("User does not want to continue!");
+					return false;
+				}
+			}
+		</SCRIPT>
+	</HEAD>
+	<input type="button" onclick="getConfirmation()" value="Leave">
+</HTML>
+
+
