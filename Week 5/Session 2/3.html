@@ -1,0 +1,26 @@
+<!--Nested Objects in JavaScript-->
+<html>
+	<body>
+		<script>
+			var person = {
+				firstName:"John",
+				lastName:"Doe",
+				id: 5566,
+				fullName: function()
+				{
+					return this.firstName+" "+this.lastName+"<br/>";
+				},
+				phone_number:{
+					mobile: "123456312",
+					LandLine: "981231232",
+					getNumber:function(){
+						return "Mobile:"+this.mobile+" LandLine:"+this.LandLine+"<br/>";
+					}
+				}		
+			};
+			
+			document.write(person.fullName());
+			document.write(person.phone_number.getNumber());
+		</script>
+	</body>
+</html>
