@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<bookstore>
+	<book category="Literature">
+		<title lang="English">Everyday Italian</title>
+		<author>Giada De Laurentiis</author>
+		<year>2005</year>
+		<price>30.00</price>
+	</book>
+	<book category="Sci-Fi">
+		<title lang="English">Frankenstein</title>
+		<author>Mary Shelley</author>
+		<year>1823</year>
+		<price>30.00</price>
+	</book>
+</bookstore>

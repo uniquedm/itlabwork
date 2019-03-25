@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<resume>
+	<qualification>
+		<btech>
+			<yearOfQualification>2020</yearOfQualification>
+			<university>Presidency University</university>
+		</btech>
+	</qualification>
+	<personalDetails>
+		<name>Newt</name>
+		<email>idk@gmail.com</email>
+		<phone>1802391319</phone>
+	</personalDetails>
+	<skillSet>
+		<technical>
+			<programmingLanguage id="1">Java</programmingLanguage>
+			<programmingLanguage id="2">Python</programmingLanguage>
+			<programmingLanguage id="3">C++</programmingLanguage>
+		</technical>
+	</skillSet>
+</resume>

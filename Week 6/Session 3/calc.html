@@ -1,0 +1,37 @@
+<HTML>
+	<SCRIPT>
+		function display(e)
+		{
+			document.getElementById("result").value+=e.id;
+		}
+	</SCRIPT>
+	<BODY>
+		<TABLE>
+			<TR>
+				<INPUT ID="result" size=7></INPUT>
+			</TR>
+			<TR>
+				<td><button id=1 onclick="display(this)">1</button></td>
+				<td><button id=2 onclick="display(this)">2</button></td>
+				<td><button id=3 onclick="display(this)">3</button></td>
+				<td rowspan=3><button id="=" onclick="display(this)">=</button></td>
+			</TR>
+			<TR>
+				<td><button id=4 onclick="display(this)">4</button></td>
+				<td><button id=5 onclick="display(this)">5</button></td>
+				<td><button id=6 onclick="display(this)">6</button></td>
+			</TR>
+			<TR>
+				<td><button id=7 onclick="display(this)">7</button></td>
+				<td><button id=8 onclick="display(this)">8</button></td>
+				<td><button id=9 onclick="display(this)">9</button></td>
+			</TR>
+			<TR>
+				<td><button id="+" onclick="display(this)">+</button></td>
+				<td><button id="-" onclick="display(this)">-</button></td>
+				<td><button id="*" onclick="display(this)">*</button></td>
+				<td><button id="/" onclick="display(this)">/</button></td>
+			</TR>
+		</TABLE>
+	</BODY>
+</HTML>

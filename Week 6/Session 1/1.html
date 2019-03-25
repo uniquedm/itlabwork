@@ -1,0 +1,72 @@
+<!--Registration-->
+<HTML>
+	<BODY>
+		<SCRIPT type="text/JavaScript">
+		function validateForm()
+		{
+			var n = document.getElementById("uname").value;
+			if(n=="")
+			{
+				alert("Name field is empty!");
+				return false;
+			}
+			for(i=0;i<name.length;i++)
+			{
+				if(!((n.charAt(i)>='a' && n.charAt(i)>='z') || (n.charAt(i)>='A' && n.charAt(i)>='Z') 
+				|| n.charAt(i)>=' ')){
+					alert("Invalid Name!");
+					return false;
+				}
+			}
+			
+			var address = document.getElementById("address").value;
+
+			if(address=="")
+			{
+				alert("Address field is empty!");
+				return false;
+			}
+	
+			var c = document.getElementById("course");
+			var sC = c.options[c.selectedIndex].value;
+			
+			if(sC==0)
+			{
+				alert("Please Select Your Course!");
+				return false;
+			}
+			
+			var t = document.getElementById("tele").value;
+			if(t.length!=10)
+			{
+				alert("Invalid Phone Number!");
+				return false;
+			}
+			return true;
+		}
+		</SCRIPT>
+		<CENTER>
+		<H1>REGISTRATION FORM</H1>
+			<DIV align="CENTER">
+			<FORM ACTION="new.html" onsubmit="return validateForm();" method="post">
+				Name:<INPUT TYPE="text" id="uname"><BR/>
+				Address:<INPUT TYPE="text" id="address"><BR/>
+				E-mail Address:<INPUT TYPE="email" id="email"><BR/>
+				Password:<INPUT TYPE="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}"><BR/>
+				Telephone:<INPUT TYPE="number" id="tele"><BR/>
+				Select Your Course:<SELECT id="course">
+					<OPTION DISABLED SELECTED VALUE=0>Select Course</OPTION>
+					<OPTION value="1">B.TECH</OPTION>
+					<OPTION value="2">BBA</OPTION>
+					<OPTION value="2">BCA</OPTION>
+					<OPTION value="3">B.COM</OPTION>
+				</SELECT><BR/>
+				Comments:<INPUT TYPE="text" name="comment"><BR/>
+				<INPUT TYPE="submit" value="Submit"/>
+				<INPUT TYPE="reset"/>
+			</FORM>
+			</DIV>
+		</CENTER>	
+	</BODY>
+	
+</HTML>

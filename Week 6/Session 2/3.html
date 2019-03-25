@@ -1,0 +1,38 @@
+<!--Arguments of a function-->
+<HTML>
+
+	<SCRIPT>
+		function arrayConstruct()
+		{
+			var n=arguments.length;
+			var a = new Array(n);
+			var i;
+			for(i=0;i<n;i++)
+			{
+				a[i]=arguments[i];
+				document.getElementById("div1").innerHTML+=a[i]+"<br/>";
+			}
+			
+			for(i=0;i<n-1;i++)
+			{
+				m=i;
+				for(j=i+1;j<n;j++)
+				{
+					if(a[j]<a[m])
+						m=j;
+				}
+				var t = a[m];
+				a[m]=a[i];
+				a[i]=t;
+			}
+			
+			document.getElementById("div1").innerHTML+=a+"<br/>";
+		}
+	</SCRIPT>
+
+	<BODY>
+		<DIV ID="div1"></div>
+		<INPUT TYPE=button onclick="arrayConstruct(51,14,60,61)" value=Contruct>
+	</BODY>
+
+</HTML>

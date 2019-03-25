@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<article>
+	<title>Simple XML</title>
+	<date>November 18, 2018</date>
+	<author>
+		<firstName>Devansh</firstName>
+		<lastName>Mishra</lastName>
+	</author>
+	<summary>XML is pretty easy.</summary>
+	<content>This chapter presents examples that uses XML</content>
+</article>
