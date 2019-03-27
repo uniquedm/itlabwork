@@ -1,4 +1,21 @@
 <?xml version="1.0"?>
+<!DOCTYPE resume
+[
+<!ELEMENT resume (qualification+,personalDetails+,skillSet+)>
+<!ELEMENT qualification (btech+)>
+<!ELEMENT btech (yearOfQualification,university)>
+<!ELEMENT yearOfQualification (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT personalDetails (name,email,phone)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT skillSet (technical+)>
+<!ELEMENT technical (programmingLanguage+,software+)>
+<!ELEMENT programmingLanguage (name+)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name id CDATA #REQUIRED>
+<!ELEMENT software (name+)>
+]>
 <resume>
 	<qualification>
 		<btech>
@@ -7,7 +24,7 @@
 		</btech>
 	</qualification>
 	<personalDetails>
-		<name>Newt</name>
+		<name id="0">Newt</name>
 		<email>idk@gmail.com</email>
 		<phone>1802391319</phone>
 	</personalDetails>
