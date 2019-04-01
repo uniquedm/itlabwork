@@ -1,0 +1,133 @@
+<HTML>
+	<BODY bgcolor="linen">
+		<script>
+			var checkGroup=0;
+			function checkReg()
+			{
+				var uname=document.getElementById("rname").value;
+				var mob=document.getElementById("mob").value;
+				
+				if(uname=="")
+				{
+					alert("Please enter a valid name!")
+					return false;
+				}			
+
+				for(i=0;i<uname.length;i++)
+				{
+					if(!((uname.charAt(i)>="a" && uname.charAt(i)<="z") || (uname.charAt(i)>="A" && uname.charAt(i)<="Z") ||uname.charAt(i)==" "))
+					{
+						alert("Only alphabets are allowed for name!")
+						return false;
+					}
+				}
+
+				if(mob.length!=10)
+				{
+					alert("Invalid Mobile Number!")
+					return false;
+				}
+				
+				if(checkGroup==1)
+				{
+					var m1=document.getElementById("m1").value;
+					var m2=document.getElementById("m2").value;
+					var m3=document.getElementById("m3").value;
+					var m4=document.getElementById("m4").value;
+					var gn=document.getElementById("gno").value;
+					if(gn.length==0)
+					{
+						alert("Please enter a group number!")
+						return false;
+					}
+					if(m1=="" && m2=="" && m3=="" && m4=="")
+					{
+						alert("Please enter atleast 1 group member name!")
+						return false;
+					}
+					for(i=0;i<m1.length;i++)
+					{
+						if(!((m1.charAt(i)>="a" && m1.charAt(i)<="z") || (m1.charAt(i)>="A" && m1.charAt(i)<="Z") ||m1.charAt(i)==" "))
+						{
+							alert("Member 1 name is invalid!")
+							return false;
+						}
+					}
+					for(i=0;i<m2.length;i++)
+					{
+						if(!((m2.charAt(i)>="a" && m2.charAt(i)<="z") || (m2.charAt(i)>="A" && m2.charAt(i)<="Z") ||m2.charAt(i)==" "))
+						{
+							alert("Member 2 name is invalid!")
+							return false;
+						}
+					}
+					for(i=0;i<m3.length;i++)
+					{
+						if(!((m3.charAt(i)>="a" && m3.charAt(i)<="z") || (m3.charAt(i)>="A" && m3.charAt(i)<="Z") ||m3.charAt(i)==" "))
+						{
+							alert("Member 3 name is invalid!")
+							return false;
+						}
+					}
+					for(i=0;i<m4.length;i++)
+					{
+						if(!((m4.charAt(i)>="a" && m4.charAt(i)<="z") || (m4.charAt(i)>="A" && m4.charAt(i)<="Z") ||m4.charAt(i)==" "))
+						{
+							alert("Member 4 name is invalid!")
+							return false;
+						}
+					}
+				}
+			}
+			function showGroup()
+			{
+				checkGroup=1;
+				document.getElementById("groupEvent").innerHTML=
+				"Group Number:<input type='number' id='gno'><br/>Member 1 Name:<input type='text' id='m1'><br/>Member 2 Name:<input type='text' id='m2'><br/>Member 3 Name:<input type='text' id='m3'><br/>Member 4 Name:<input type='text' id='m4'><br/>";
+			}
+			function hideGroup()
+			{
+				checkGroup=0;
+				document.getElementById("groupEvent").innerHTML="";
+			}
+		</script>
+		<H2 align="center" style="color:blue">EQUI<sup>2</sup>P</H2>
+		<H1 align="center" style="color:red">REGISTRATION</H1><BR/>
+		<form id="regForm" action="2016CSE219_final.html" method="post" onsubmit="return checkReg()">
+		<table align="center">
+		<tr><td>Name:</td><td><input type="text" id="rname"/></td></tr>
+		<tr><td>Mobile number:</td><td><input type="number" id="mob"/></td></tr>
+		<tr><td></td><td>Branch:<select name="branch">
+			<option value="1">CSE</option>
+			<option value="2">ECE</option>
+			<option value="3">EEE</option>
+		</select>
+		Semester:<select name="sem">
+			<option value="1">I</option>
+			<option value="2">II</option>
+			<option value="3">III</option>
+			<option value="4">IV</option>
+			<option value="5">V</option>
+			<option value="6">VI</option>
+			<option value="7">VII</option>
+			<option value="8">VIII</option>
+		</select>
+		</td></tr>
+
+		<tr><td></td><td>Single:<input type="radio" name="eType" onchange="hideGroup()" checked/>Group:<input type="radio" name="eType" onchange="showGroup()"/><br/>
+		<span id="groupEvent"></span>
+		</td></tr>
+		<tr><td>Event:</td><td><select name="ename">
+			<option value="1">CodeKnack</option>
+			<option value="2">Quiz</option>
+			<option value="3">Poster Making</option>
+		</select>
+		</td></tr>
+		<tr><td></td><td>
+		<input type="submit" value="Register">
+		<input type="reset" value="Reset" onclick="hideGroup()"/>
+		</td></tr>
+		</table>
+		</form>
+	<BODY>
+</HTML>
