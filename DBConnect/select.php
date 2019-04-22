@@ -4,7 +4,7 @@
 	$sql = "SELECT * FROM employee";
 	
 	$result = mysqli_query($link,$sql);
-	echo "<table border=2><tr><th>ID</th><th>Name</th><th>Salary</th><th>Address</th></tr>";
+	echo "<table border=3><tr><th>ID</th><th>Name</th><th>Salary</th><th>Address</th></tr>";
 	while($row = mysqli_fetch_array($result))
 	{
 		$id = $row['id'];
